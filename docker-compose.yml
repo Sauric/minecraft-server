@@ -1,0 +1,34 @@
+version: "3"
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    volumes:
+      - minecraftdata:/data
+      - /home/ubuntu/repos/minecraft/plugins:/plugins
+    ports:
+      - 25565:25565
+    environment:
+      EULA: "TRUE"
+      TYPE: "BUKKIT"
+      ONLINE_MODE: "FALSE"
+      SEED: "712262452098460"
+      ENABLE_WHITELIST: "FALSE"
+      ENFORCE_WHITELIST: "FALSE"
+      PVP: "FALSE"
+      ICON: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGitHub&psig=AOvVaw0sLCUPmvkIOY2CmB9mlhJS&ust=1694795131117000&source=images&cd=vfe&opi=89978449&ved=0CA4QjRxqFwoTCIjW6IPCqoEDFQAAAAAdAAAAABAD"
+      OVERRIDE_ICON: "TRUE"
+      SERVER_NAME: "Sauric Server"
+      ENABLE_ROLLING_LOGS: "TRUE"
+      VERSION: "1.20.1"
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+volumes:
+  minecraftdata:
+
+# /give Sauric minecraft:diamond_pickaxe{Enchantments:[{id:mending, lvl:1}, {id:unbreaking, lvl:5}, {id:efficiency, lvl:5}, {id:fortune, lvl:3}]}
+# /give Sauric minecraft:diamond_sword{Enchantments:[{id:mending, lvl:1}, {id:unbreaking, lvl:5}, {id:looting, lvl:3}, {id:knockback, lvl:3}, {id:sharpness, lvl: 5}]}
+# /give Sauric minecraft:fishing_rod{Enchantments:[{id:lure, lvl:3}]}
+
+# cave -752 -8 765 
