@@ -10,7 +10,7 @@ services:
       - 25565:25565
     environment:
       EULA: "TRUE"
-      TYPE: "BUKKIT"
+      TYPE: "PAPER"
       ONLINE_MODE: "FALSE"
       SEED: "712262452098460"
       ENABLE_WHITELIST: "FALSE"
