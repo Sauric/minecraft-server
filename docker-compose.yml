@@ -13,7 +13,7 @@ services:
       TYPE: "PAPER"
       ONLINE_MODE: "FALSE"
       SEED: "712262452098460"
-      ENABLE_WHITELIST: "FALSE"
+      ENABLE_WHITELIST: "TRUE"
       ENFORCE_WHITELIST: "FALSE"
       PVP: "FALSE"
       ICON: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGitHub&psig=AOvVaw0sLCUPmvkIOY2CmB9mlhJS&ust=1694795131117000&source=images&cd=vfe&opi=89978449&ved=0CA4QjRxqFwoTCIjW6IPCqoEDFQAAAAAdAAAAABAD"
