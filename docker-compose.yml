@@ -20,6 +20,7 @@ services:
       OVERRIDE_ICON: "TRUE"
       SERVER_NAME: "Sauric Server"
       ENABLE_ROLLING_LOGS: "TRUE"
+      MAX_MEMORY: "4G"
       VERSION: "1.20.1"
     tty: true
     stdin_open: true
